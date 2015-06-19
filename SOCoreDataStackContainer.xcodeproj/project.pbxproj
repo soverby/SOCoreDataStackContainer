@@ -14,6 +14,12 @@
 		F9CFB3C31B346CCD0030FA8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9CFB3C21B346CCD0030FA8C /* Images.xcassets */; };
 		F9CFB3C61B346CCD0030FA8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9CFB3C41B346CCD0030FA8C /* LaunchScreen.xib */; };
 		F9CFB3D21B346CCD0030FA8C /* SOCoreDataStackContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CFB3D11B346CCD0030FA8C /* SOCoreDataStackContainerTests.swift */; };
+		F9CFB3E51B346CDA0030FA8C /* SOCoreDataStack.h in Headers */ = {isa = PBXBuildFile; fileRef = F9CFB3E41B346CDA0030FA8C /* SOCoreDataStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9CFB3EB1B346CDA0030FA8C /* SOCoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CFB3E01B346CDA0030FA8C /* SOCoreDataStack.framework */; };
+		F9CFB3F41B346CDA0030FA8C /* SOCoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CFB3F31B346CDA0030FA8C /* SOCoreDataStackTests.swift */; };
+		F9CFB3F71B346CDA0030FA8C /* SOCoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CFB3E01B346CDA0030FA8C /* SOCoreDataStack.framework */; };
+		F9CFB3F81B346CDA0030FA8C /* SOCoreDataStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9CFB3E01B346CDA0030FA8C /* SOCoreDataStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F9CFB4011B346D640030FA8C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CFB4001B346D640030FA8C /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +30,42 @@
 			remoteGlobalIDString = F9CFB3B31B346CCD0030FA8C;
 			remoteInfo = SOCoreDataStackContainer;
 		};
+		F9CFB3EC1B346CDA0030FA8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CFB3AC1B346CCD0030FA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9CFB3DF1B346CDA0030FA8C;
+			remoteInfo = SOCoreDataStack;
+		};
+		F9CFB3EE1B346CDA0030FA8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CFB3AC1B346CCD0030FA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9CFB3B31B346CCD0030FA8C;
+			remoteInfo = SOCoreDataStackContainer;
+		};
+		F9CFB3F51B346CDA0030FA8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CFB3AC1B346CCD0030FA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9CFB3DF1B346CDA0030FA8C;
+			remoteInfo = SOCoreDataStack;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F9CFB3FC1B346CDA0030FA8C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F9CFB3F81B346CDA0030FA8C /* SOCoreDataStack.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F9CFB3B41B346CCD0030FA8C /* SOCoreDataStackContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOCoreDataStackContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +79,13 @@
 		F9CFB3CB1B346CCD0030FA8C /* SOCoreDataStackContainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOCoreDataStackContainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CFB3D01B346CCD0030FA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9CFB3D11B346CCD0030FA8C /* SOCoreDataStackContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOCoreDataStackContainerTests.swift; sourceTree = "<group>"; };
+		F9CFB3E01B346CDA0030FA8C /* SOCoreDataStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SOCoreDataStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9CFB3E31B346CDA0030FA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9CFB3E41B346CDA0030FA8C /* SOCoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOCoreDataStack.h; sourceTree = "<group>"; };
+		F9CFB3EA1B346CDA0030FA8C /* SOCoreDataStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOCoreDataStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9CFB3F21B346CDA0030FA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9CFB3F31B346CDA0030FA8C /* SOCoreDataStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOCoreDataStackTests.swift; sourceTree = "<group>"; };
+		F9CFB4001B346D640030FA8C /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CFB3F71B346CDA0030FA8C /* SOCoreDataStack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +101,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9CFB3DC1B346CDA0030FA8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9CFB3E71B346CDA0030FA8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9CFB3EB1B346CDA0030FA8C /* SOCoreDataStack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +127,8 @@
 			children = (
 				F9CFB3B61B346CCD0030FA8C /* SOCoreDataStackContainer */,
 				F9CFB3CE1B346CCD0030FA8C /* SOCoreDataStackContainerTests */,
+				F9CFB3E11B346CDA0030FA8C /* SOCoreDataStack */,
+				F9CFB3F01B346CDA0030FA8C /* SOCoreDataStackTests */,
 				F9CFB3B51B346CCD0030FA8C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +138,8 @@
 			children = (
 				F9CFB3B41B346CCD0030FA8C /* SOCoreDataStackContainer.app */,
 				F9CFB3CB1B346CCD0030FA8C /* SOCoreDataStackContainerTests.xctest */,
+				F9CFB3E01B346CDA0030FA8C /* SOCoreDataStack.framework */,
+				F9CFB3EA1B346CDA0030FA8C /* SOCoreDataStackTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,7 +183,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F9CFB3E11B346CDA0030FA8C /* SOCoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				F9CFB3E41B346CDA0030FA8C /* SOCoreDataStack.h */,
+				F9CFB3E21B346CDA0030FA8C /* Supporting Files */,
+				F9CFB4001B346D640030FA8C /* CoreDataStack.swift */,
+			);
+			path = SOCoreDataStack;
+			sourceTree = "<group>";
+		};
+		F9CFB3E21B346CDA0030FA8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9CFB3E31B346CDA0030FA8C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9CFB3F01B346CDA0030FA8C /* SOCoreDataStackTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9CFB3F31B346CDA0030FA8C /* SOCoreDataStackTests.swift */,
+				F9CFB3F11B346CDA0030FA8C /* Supporting Files */,
+			);
+			path = SOCoreDataStackTests;
+			sourceTree = "<group>";
+		};
+		F9CFB3F11B346CDA0030FA8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9CFB3F21B346CDA0030FA8C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F9CFB3DD1B346CDA0030FA8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9CFB3E51B346CDA0030FA8C /* SOCoreDataStack.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		F9CFB3B31B346CCD0030FA8C /* SOCoreDataStackContainer */ = {
@@ -125,10 +239,12 @@
 				F9CFB3B01B346CCD0030FA8C /* Sources */,
 				F9CFB3B11B346CCD0030FA8C /* Frameworks */,
 				F9CFB3B21B346CCD0030FA8C /* Resources */,
+				F9CFB3FC1B346CDA0030FA8C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F9CFB3F61B346CDA0030FA8C /* PBXTargetDependency */,
 			);
 			name = SOCoreDataStackContainer;
 			productName = SOCoreDataStackContainer;
@@ -153,6 +269,43 @@
 			productReference = F9CFB3CB1B346CCD0030FA8C /* SOCoreDataStackContainerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F9CFB3DF1B346CDA0030FA8C /* SOCoreDataStack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9CFB3F91B346CDA0030FA8C /* Build configuration list for PBXNativeTarget "SOCoreDataStack" */;
+			buildPhases = (
+				F9CFB3DB1B346CDA0030FA8C /* Sources */,
+				F9CFB3DC1B346CDA0030FA8C /* Frameworks */,
+				F9CFB3DD1B346CDA0030FA8C /* Headers */,
+				F9CFB3DE1B346CDA0030FA8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOCoreDataStack;
+			productName = SOCoreDataStack;
+			productReference = F9CFB3E01B346CDA0030FA8C /* SOCoreDataStack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F9CFB3E91B346CDA0030FA8C /* SOCoreDataStackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9CFB3FD1B346CDA0030FA8C /* Build configuration list for PBXNativeTarget "SOCoreDataStackTests" */;
+			buildPhases = (
+				F9CFB3E61B346CDA0030FA8C /* Sources */,
+				F9CFB3E71B346CDA0030FA8C /* Frameworks */,
+				F9CFB3E81B346CDA0030FA8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9CFB3ED1B346CDA0030FA8C /* PBXTargetDependency */,
+				F9CFB3EF1B346CDA0030FA8C /* PBXTargetDependency */,
+			);
+			name = SOCoreDataStackTests;
+			productName = SOCoreDataStackTests;
+			productReference = F9CFB3EA1B346CDA0030FA8C /* SOCoreDataStackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +319,13 @@
 						CreatedOnToolsVersion = 6.2;
 					};
 					F9CFB3CA1B346CCD0030FA8C = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = F9CFB3B31B346CCD0030FA8C;
+					};
+					F9CFB3DF1B346CDA0030FA8C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					F9CFB3E91B346CDA0030FA8C = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = F9CFB3B31B346CCD0030FA8C;
 					};
@@ -186,6 +346,8 @@
 			targets = (
 				F9CFB3B31B346CCD0030FA8C /* SOCoreDataStackContainer */,
 				F9CFB3CA1B346CCD0030FA8C /* SOCoreDataStackContainerTests */,
+				F9CFB3DF1B346CDA0030FA8C /* SOCoreDataStack */,
+				F9CFB3E91B346CDA0030FA8C /* SOCoreDataStackTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +364,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F9CFB3C91B346CCD0030FA8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9CFB3DE1B346CDA0030FA8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9CFB3E81B346CDA0030FA8C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,6 +405,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9CFB3DB1B346CDA0030FA8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9CFB4011B346D640030FA8C /* CoreDataStack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9CFB3E61B346CDA0030FA8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9CFB3F41B346CDA0030FA8C /* SOCoreDataStackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +428,21 @@
 			isa = PBXTargetDependency;
 			target = F9CFB3B31B346CCD0030FA8C /* SOCoreDataStackContainer */;
 			targetProxy = F9CFB3CC1B346CCD0030FA8C /* PBXContainerItemProxy */;
+		};
+		F9CFB3ED1B346CDA0030FA8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9CFB3DF1B346CDA0030FA8C /* SOCoreDataStack */;
+			targetProxy = F9CFB3EC1B346CDA0030FA8C /* PBXContainerItemProxy */;
+		};
+		F9CFB3EF1B346CDA0030FA8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9CFB3B31B346CCD0030FA8C /* SOCoreDataStackContainer */;
+			targetProxy = F9CFB3EE1B346CDA0030FA8C /* PBXContainerItemProxy */;
+		};
+		F9CFB3F61B346CDA0030FA8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9CFB3DF1B346CDA0030FA8C /* SOCoreDataStack */;
+			targetProxy = F9CFB3F51B346CDA0030FA8C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -392,6 +599,81 @@
 			};
 			name = Release;
 		};
+		F9CFB3FA1B346CDA0030FA8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SOCoreDataStack/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F9CFB3FB1B346CDA0030FA8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SOCoreDataStack/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9CFB3FE1B346CDA0030FA8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SOCoreDataStackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOCoreDataStackContainer.app/SOCoreDataStackContainer";
+			};
+			name = Debug;
+		};
+		F9CFB3FF1B346CDA0030FA8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SOCoreDataStackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOCoreDataStackContainer.app/SOCoreDataStackContainer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +699,22 @@
 			buildConfigurations = (
 				F9CFB3D91B346CCD0030FA8C /* Debug */,
 				F9CFB3DA1B346CCD0030FA8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F9CFB3F91B346CDA0030FA8C /* Build configuration list for PBXNativeTarget "SOCoreDataStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9CFB3FA1B346CDA0030FA8C /* Debug */,
+				F9CFB3FB1B346CDA0030FA8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F9CFB3FD1B346CDA0030FA8C /* Build configuration list for PBXNativeTarget "SOCoreDataStackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9CFB3FE1B346CDA0030FA8C /* Debug */,
+				F9CFB3FF1B346CDA0030FA8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
