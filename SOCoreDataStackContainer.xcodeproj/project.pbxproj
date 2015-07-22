@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F941B5331B3D8587005A105C /* _TestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F941B52C1B3D8587005A105C /* _TestEntity.m */; };
+		F941B5341B3D8587005A105C /* _TestEntityDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F941B52E1B3D8587005A105C /* _TestEntityDetail.m */; };
+		F941B5351B3D8587005A105C /* TestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F941B5301B3D8587005A105C /* TestEntity.m */; };
+		F941B5361B3D8587005A105C /* TestEntityDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F941B5321B3D8587005A105C /* TestEntityDetail.m */; };
+		F943A5FF1B4182770073BEC5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CFB4001B346D640030FA8C /* CoreDataStack.swift */; };
 		F9CFB3BA1B346CCD0030FA8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CFB3B91B346CCD0030FA8C /* AppDelegate.swift */; };
 		F9CFB3BC1B346CCD0030FA8C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CFB3BB1B346CCD0030FA8C /* MasterViewController.swift */; };
 		F9CFB3BE1B346CCD0030FA8C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CFB3BD1B346CCD0030FA8C /* DetailViewController.swift */; };
@@ -16,10 +21,10 @@
 		F9CFB3D21B346CCD0030FA8C /* SOCoreDataStackContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CFB3D11B346CCD0030FA8C /* SOCoreDataStackContainerTests.swift */; };
 		F9CFB3E51B346CDA0030FA8C /* SOCoreDataStack.h in Headers */ = {isa = PBXBuildFile; fileRef = F9CFB3E41B346CDA0030FA8C /* SOCoreDataStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9CFB3EB1B346CDA0030FA8C /* SOCoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CFB3E01B346CDA0030FA8C /* SOCoreDataStack.framework */; };
-		F9CFB3F41B346CDA0030FA8C /* SOCoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CFB3F31B346CDA0030FA8C /* SOCoreDataStackTests.swift */; };
 		F9CFB3F71B346CDA0030FA8C /* SOCoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CFB3E01B346CDA0030FA8C /* SOCoreDataStack.framework */; };
 		F9CFB3F81B346CDA0030FA8C /* SOCoreDataStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9CFB3E01B346CDA0030FA8C /* SOCoreDataStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F9CFB4011B346D640030FA8C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CFB4001B346D640030FA8C /* CoreDataStack.swift */; };
+		F9CFB4031B346F010030FA8C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CFB4021B346F010030FA8C /* CoreData.framework */; };
+		F9CFB4061B34AA040030FA8C /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9CFB4041B34AA040030FA8C /* TestModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F941B52B1B3D8587005A105C /* _TestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TestEntity.h; sourceTree = "<group>"; };
+		F941B52C1B3D8587005A105C /* _TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TestEntity.m; sourceTree = "<group>"; };
+		F941B52D1B3D8587005A105C /* _TestEntityDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TestEntityDetail.h; sourceTree = "<group>"; };
+		F941B52E1B3D8587005A105C /* _TestEntityDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TestEntityDetail.m; sourceTree = "<group>"; };
+		F941B52F1B3D8587005A105C /* TestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEntity.h; sourceTree = "<group>"; };
+		F941B5301B3D8587005A105C /* TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity.m; sourceTree = "<group>"; };
+		F941B5311B3D8587005A105C /* TestEntityDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEntityDetail.h; sourceTree = "<group>"; };
+		F941B5321B3D8587005A105C /* TestEntityDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntityDetail.m; sourceTree = "<group>"; };
+		F941B5381B3D8C78005A105C /* SOCoreDataStackContainerTests-BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SOCoreDataStackContainerTests-BridgingHeader.h"; sourceTree = "<group>"; };
 		F9CFB3B41B346CCD0030FA8C /* SOCoreDataStackContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOCoreDataStackContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CFB3B81B346CCD0030FA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9CFB3B91B346CCD0030FA8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,8 +98,9 @@
 		F9CFB3E41B346CDA0030FA8C /* SOCoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOCoreDataStack.h; sourceTree = "<group>"; };
 		F9CFB3EA1B346CDA0030FA8C /* SOCoreDataStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOCoreDataStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CFB3F21B346CDA0030FA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9CFB3F31B346CDA0030FA8C /* SOCoreDataStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOCoreDataStackTests.swift; sourceTree = "<group>"; };
 		F9CFB4001B346D640030FA8C /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		F9CFB4021B346F010030FA8C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F9CFB4051B34AA040030FA8C /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CFB4031B346F010030FA8C /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,9 +138,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F941B52A1B3D833B005A105C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F941B52B1B3D8587005A105C /* _TestEntity.h */,
+				F941B52C1B3D8587005A105C /* _TestEntity.m */,
+				F941B52D1B3D8587005A105C /* _TestEntityDetail.h */,
+				F941B52E1B3D8587005A105C /* _TestEntityDetail.m */,
+				F941B52F1B3D8587005A105C /* TestEntity.h */,
+				F941B5301B3D8587005A105C /* TestEntity.m */,
+				F941B5311B3D8587005A105C /* TestEntityDetail.h */,
+				F941B5321B3D8587005A105C /* TestEntityDetail.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F9CFB3AB1B346CCD0030FA8C = {
 			isa = PBXGroup;
 			children = (
+				F9CFB4021B346F010030FA8C /* CoreData.framework */,
 				F9CFB3B61B346CCD0030FA8C /* SOCoreDataStackContainer */,
 				F9CFB3CE1B346CCD0030FA8C /* SOCoreDataStackContainerTests */,
 				F9CFB3E11B346CDA0030FA8C /* SOCoreDataStack */,
@@ -147,6 +179,7 @@
 		F9CFB3B61B346CCD0030FA8C /* SOCoreDataStackContainer */ = {
 			isa = PBXGroup;
 			children = (
+				F941B52A1B3D833B005A105C /* Model */,
 				F9CFB3B91B346CCD0030FA8C /* AppDelegate.swift */,
 				F9CFB3BB1B346CCD0030FA8C /* MasterViewController.swift */,
 				F9CFB3BD1B346CCD0030FA8C /* DetailViewController.swift */,
@@ -154,6 +187,7 @@
 				F9CFB3C21B346CCD0030FA8C /* Images.xcassets */,
 				F9CFB3C41B346CCD0030FA8C /* LaunchScreen.xib */,
 				F9CFB3B71B346CCD0030FA8C /* Supporting Files */,
+				F9CFB4041B34AA040030FA8C /* TestModel.xcdatamodeld */,
 			);
 			path = SOCoreDataStackContainer;
 			sourceTree = "<group>";
@@ -169,6 +203,7 @@
 		F9CFB3CE1B346CCD0030FA8C /* SOCoreDataStackContainerTests */ = {
 			isa = PBXGroup;
 			children = (
+				F941B5381B3D8C78005A105C /* SOCoreDataStackContainerTests-BridgingHeader.h */,
 				F9CFB3D11B346CCD0030FA8C /* SOCoreDataStackContainerTests.swift */,
 				F9CFB3CF1B346CCD0030FA8C /* Supporting Files */,
 			);
@@ -186,8 +221,8 @@
 		F9CFB3E11B346CDA0030FA8C /* SOCoreDataStack */ = {
 			isa = PBXGroup;
 			children = (
-				F9CFB3E41B346CDA0030FA8C /* SOCoreDataStack.h */,
 				F9CFB3E21B346CDA0030FA8C /* Supporting Files */,
+				F9CFB3E41B346CDA0030FA8C /* SOCoreDataStack.h */,
 				F9CFB4001B346D640030FA8C /* CoreDataStack.swift */,
 			);
 			path = SOCoreDataStack;
@@ -204,7 +239,6 @@
 		F9CFB3F01B346CDA0030FA8C /* SOCoreDataStackTests */ = {
 			isa = PBXGroup;
 			children = (
-				F9CFB3F31B346CDA0030FA8C /* SOCoreDataStackTests.swift */,
 				F9CFB3F11B346CDA0030FA8C /* Supporting Files */,
 			);
 			path = SOCoreDataStackTests;
@@ -393,7 +427,12 @@
 			files = (
 				F9CFB3BE1B346CCD0030FA8C /* DetailViewController.swift in Sources */,
 				F9CFB3BC1B346CCD0030FA8C /* MasterViewController.swift in Sources */,
+				F941B5331B3D8587005A105C /* _TestEntity.m in Sources */,
 				F9CFB3BA1B346CCD0030FA8C /* AppDelegate.swift in Sources */,
+				F9CFB4061B34AA040030FA8C /* TestModel.xcdatamodeld in Sources */,
+				F941B5361B3D8587005A105C /* TestEntityDetail.m in Sources */,
+				F941B5341B3D8587005A105C /* _TestEntityDetail.m in Sources */,
+				F941B5351B3D8587005A105C /* TestEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9CFB4011B346D640030FA8C /* CoreDataStack.swift in Sources */,
+				F943A5FF1B4182770073BEC5 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +456,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9CFB3F41B346CDA0030FA8C /* SOCoreDataStackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +618,7 @@
 				INFOPLIST_FILE = SOCoreDataStackContainerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SOCoreDataStackContainerTests/SOCoreDataStackContainerTests-BridgingHeader.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOCoreDataStackContainer.app/SOCoreDataStackContainer";
 			};
 			name = Debug;
@@ -595,6 +634,7 @@
 				INFOPLIST_FILE = SOCoreDataStackContainerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SOCoreDataStackContainerTests/SOCoreDataStackContainerTests-BridgingHeader.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOCoreDataStackContainer.app/SOCoreDataStackContainer";
 			};
 			name = Release;
@@ -616,7 +656,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -636,7 +676,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -656,6 +696,7 @@
 				INFOPLIST_FILE = SOCoreDataStackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOCoreDataStackContainer.app/SOCoreDataStackContainer";
 			};
 			name = Debug;
@@ -670,6 +711,7 @@
 				INFOPLIST_FILE = SOCoreDataStackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOCoreDataStackContainer.app/SOCoreDataStackContainer";
 			};
 			name = Release;
@@ -693,6 +735,7 @@
 				F9CFB3D71B346CCD0030FA8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9CFB3D81B346CCD0030FA8C /* Build configuration list for PBXNativeTarget "SOCoreDataStackContainerTests" */ = {
 			isa = XCConfigurationList;
@@ -701,6 +744,7 @@
 				F9CFB3DA1B346CCD0030FA8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9CFB3F91B346CDA0030FA8C /* Build configuration list for PBXNativeTarget "SOCoreDataStack" */ = {
 			isa = XCConfigurationList;
@@ -709,6 +753,7 @@
 				F9CFB3FB1B346CDA0030FA8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9CFB3FD1B346CDA0030FA8C /* Build configuration list for PBXNativeTarget "SOCoreDataStackTests" */ = {
 			isa = XCConfigurationList;
@@ -717,8 +762,22 @@
 				F9CFB3FF1B346CDA0030FA8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9CFB4041B34AA040030FA8C /* TestModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9CFB4051B34AA040030FA8C /* TestModel.xcdatamodel */,
+			);
+			currentVersion = F9CFB4051B34AA040030FA8C /* TestModel.xcdatamodel */;
+			path = TestModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F9CFB3AC1B346CCD0030FA8C /* Project object */;
 }

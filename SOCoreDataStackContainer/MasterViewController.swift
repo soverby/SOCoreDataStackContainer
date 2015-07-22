@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import SOCoreDataStack
 
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
-
+//    let modelURL = NSBundle(path: <#String#>)
+//    var coreDataStack = CoreDataStack(modelURL: <#NSURL#>, databaseName: <#String#>)
 
     override func awakeFromNib() {
         super.awakeFromNib()
