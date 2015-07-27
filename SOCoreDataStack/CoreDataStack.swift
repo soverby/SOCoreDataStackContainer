@@ -19,7 +19,7 @@ public class CoreDataStack {
     
     lazy var applicationDocumentsDirectory: NSURL = {
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count - 1] as NSURL
+        return urls[urls.count - 1] as! NSURL
     }()
 
     public init(modelURL: NSURL, databaseName: String) {
@@ -53,9 +53,10 @@ public class CoreDataStack {
         var contextStack = context
         while(contextStack !== self.privateMasterContext && contextStack.parentContext != nil) {
             contextStack.performBlockAndWait() {
+
                 var error: NSError? = nil
-                if !(contextStack.obtainPermanentIDsForObjects(contextStack.insertedObjects.allObjects, error: &error)) {
-                    NSLog("Error obtaining permanent IDs for \(contextStack.insertedObjects.allObjects), \(error)")
+                if !(contextStack.obtainPermanentIDsForObjects(Array(contextStack.insertedObjects), error: &error)) {
+                    NSLog("Error obtaining permanent IDs for \(Array(contextStack.insertedObjects)), \(error)")
                 }
                 
                 if !(contextStack.save(&error)) {
@@ -75,8 +76,8 @@ public class CoreDataStack {
         
         persistToStore.performBlock({ () -> Void in
             var error: NSError? = nil
-            if !(persistToStore.obtainPermanentIDsForObjects(persistToStore.insertedObjects.allObjects, error: &error)) {
-                NSLog("Error obtaining permanent IDs for \(persistToStore.insertedObjects.allObjects), \(error)")
+            if !(persistToStore.obtainPermanentIDsForObjects(Array(persistToStore.insertedObjects), error: &error)) {
+                NSLog("Error obtaining permanent IDs for \(Array(persistToStore.insertedObjects)), \(error)")
             }
             
             if !(persistToStore.save(&error)) {
